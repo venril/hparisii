@@ -1,0 +1,6 @@
+<?php foreach ($users as $user) : ?>
+<h1><?php echo $this->escape($user->getFirstname()) ?></h1>
+<p><?php echo $this->escape($user->getEmail()) ?></p>
+<p><?php echo $this->escape($user->getBirthdate()->format('d/m/Y')) ?></p>
+
+<?php endforeach;
